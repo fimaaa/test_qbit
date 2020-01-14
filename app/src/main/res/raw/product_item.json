@@ -1,0 +1,27 @@
+[
+  {
+    "id_products": 0,
+    "name_products": "product 0",
+    "image_product": "https://s.kaskus.id/images/2020/01/13/3446017_20200113100348.jpg"
+  },
+  {
+    "id_products": 1,
+    "name_products": "product 1",
+    "image_product": "https://i.ibb.co/nwKrS52/00147010015785471597859-Final-Fantasy-XIII.jpg"
+  },
+  {
+    "id_products": 2,
+    "name_products": "product 2",
+    "image_product": "https://s.kaskus.id/images/2020/01/13/3446017_20200113100348.jpg"
+  },
+  {
+    "id_products": 3,
+    "name_products": "product 3",
+    "image_product": "https://i.ibb.co/nwKrS52/00147010015785471597859-Final-Fantasy-XIII.jpg"
+  },
+  {
+    "id_products": 4,
+    "name_products": "product 4",
+    "image_product": "https://s.kaskus.id/images/2020/01/13/3446017_20200113100348.jpg"
+  }
+]

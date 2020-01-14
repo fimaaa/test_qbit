@@ -7,7 +7,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import com.example.qbittest.R
 import com.example.qbittest.fragment.EmptyFragment
-import com.example.qbittest.fragment.HomeFragment
+import com.example.qbittest.fragment.home.view.HomeFragment
 import com.example.qbittest.module.dashboard.DashboardInterface
 import com.example.qbittest.module.dashboard.presenter.DashboardPresenter
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -38,16 +38,6 @@ class DashboardActivity:AppCompatActivity(), DashboardInterface.View,
     }
 
     private fun initView(){
-        //        if (childFragment < 0) {
-//            childFragment = 0;
-//            Intent i = new Intent("showBottomsheet");
-//            // Data you need to pass to activity
-//            i.putExtra("type", BaseActivity.REGISTER_FINISH_USER);
-//            sendBroadcast(i);
-//        }
-//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT){
-//            getWindow().setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
-//        }
         fm.beginTransaction().add(R.id.content, favFragment, "2").hide(favFragment)
             .commit()
         fm.beginTransaction().add(R.id.content, profileFragment, "3").hide(profileFragment)

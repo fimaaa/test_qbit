@@ -8,6 +8,7 @@
     android:padding="10dp"
     >
     <ImageView
+        android:id="@+id/iv_open_toolbar"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintWidth_percent="0.1"
@@ -15,11 +16,11 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:padding="5dp"
-        android:src="@drawable/ic_launcher_background"
+        android:src="@drawable/shape_roundright_background"
         />
 
     <ImageView
-        android:id="@+id/iv_cart"
+        android:id="@+id/iv_cart_toolbar"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintWidth_percent="0.1"
@@ -30,14 +31,16 @@
         android:src="@drawable/ic_launcher_background"
         />
     <TextView
+        android:id="@+id/tv_totalchart_toolbar"
         android:layout_width="25dp"
         android:layout_height="25dp"
-        app:layout_constraintTop_toTopOf="@id/iv_cart"
-        app:layout_constraintRight_toRightOf="@id/iv_cart"
+        app:layout_constraintTop_toTopOf="@id/iv_cart_toolbar"
+        app:layout_constraintRight_toRightOf="@id/iv_cart_toolbar"
         android:background="@drawable/shape_circle_cart"
         android:text="@string/number_cart"
         android:maxLines="1"
         android:gravity="center"
+        android:visibility="gone"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,10 +2,14 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:attrs="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/toolbar_dashboard"
+        layout="@layout/toolbar_manualtop"
+        />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,24 +21,30 @@
         android:textStyle="bold"
         android:text="@string/nike_app_store"
         />
-    <androidx.cardview.widget.CardView
-        app:cardCornerRadius="6dp"
-        android:layout_margin="16dp"
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_bannerimage"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <com.smarteist.autoimageslider.SliderView
-            android:id="@+id/imageSlider"
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            app:sliderIndicatorRtlMode="off"
-            />
-
-    </androidx.cardview.widget.CardView>
+        android:layout_height="200dp"
+        />
+    <com.rd.PageIndicatorView
+        android:id="@+id/pageIndicatorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:piv_animationType="fill"
+        app:piv_dynamicCount="true"
+        app:piv_interactiveAnimation="true"
+        app:piv_selectedColor="@color/black"
+        app:piv_unselectedColor="@android:color/white"
+        app:piv_viewPager="@id/vp_bannerimage"
+        attrs:piv_padding="12dp"
+        attrs:piv_radius="3dp"
+        />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rcv_product"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         android:orientation="horizontal"
         android:layout_margin="10dp"
