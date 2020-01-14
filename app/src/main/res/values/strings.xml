@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">QbitTest</string>
+    <string name="nike_app_store">Nike App Store</string>
+    <string name="number_cart">%1$d</string>
+</resources>
