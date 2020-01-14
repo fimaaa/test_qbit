@@ -1,6 +1,5 @@
 package com.example.qbittest.fragment.home.view
 
-import android.graphics.BitmapFactory
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -52,7 +51,7 @@ class HomeFragment: Fragment(), HomeInterface.View {
         mPresenter.getDataProduct()
 
         iv_open_toolbar.setOnClickListener {
-            Util.imageViewAnimatedChange(context!!,iv_open_toolbar,resources.getDrawable(R.drawable.shape_circle_cart))
+            Util.imageViewAnimatedChange(context!!,iv_open_toolbar,resources.getDrawable(R.drawable.ic_close))
         }
     }
 

@@ -10,7 +10,7 @@
         android:color="@color/colorAccent" >
     </stroke>
     <size
-        android:width="25dp"
-        android:height="25dp"/>
+        android:width="8dp"
+        android:height="8dp"/>
 
 </shape>
